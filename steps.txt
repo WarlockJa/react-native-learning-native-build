@@ -1,0 +1,36 @@
+    installing EAS CLI
+npm i -g eas-cli
+
+    check eas version
+eas -v
+
+    login to expo.dev account
+eas login
+
+    check login status
+eas whoami
+
+    initialize expo services
+eas init
+
+    configure the app build
+eas build:configure
+    // when asked about the platform select all. -> creates eas.json
+
+    adding to .gitignore
+/ios
+/android
+
+    running checks on the app
+    install expo check
+npx expo install --check
+
+    making native build
+    // docs https://docs.expo.dev/submit/introduction/
+    creating android build (because no apple account)
+eas build --profile development --platform android
+
+    wait for the build to finish. scan qr code of the build with Expo Go app. Press install at Build artifact
+    After building download and install your app
+    Launch the installed app. Start npx expo start locally and connect to the server from the installed app
+    You are now working with a native app instead of an expo sandbox
